@@ -1,0 +1,161 @@
+{
+  "phase": "public",
+  "n": 13,
+  "users": null,
+  "turns": null,
+  "config_used": {
+    "provider": "openai",
+    "model": "google/gemini-2.5-flash",
+    "model_price_tier": "premium",
+    "max_steps": 12,
+    "loop_guard": true,
+    "temperature": 0.1,
+    "context_size": 8,
+    "verbose_system": true,
+    "retry": {
+      "enabled": true,
+      "max_attempts": 3,
+      "backoff_ms": 1000
+    },
+    "cache": {
+      "enabled": true
+    },
+    "normalize_unicode": false,
+    "redact_pii": true,
+    "session_drift_rate": 0.0,
+    "context_reset_every": 0,
+    "tool_error_rate": 0.0,
+    "catalog_override": {},
+    "planner": false,
+    "verify": false,
+    "self_consistency": 1,
+    "tool_budget": 0,
+    "prompt_chars": 1064,
+    "custom_prompt": true
+  },
+  "results": [
+    {
+      "qid": "pub-01",
+      "question": "Mua 2 iPhone dung ma WINNER, ship Ha Noi - tong cong bao nhieu VND?",
+      "answer": "Calculating the total price:\nItem price: 2 x 22,000,000 VND = 44,000,000 VND\nDiscount: 44,000,000 VND x 10% = 4,400,000 VND\nPrice after discount: 44,000,000 VND - 4,400,000 VND = 39,600,000 VND\nShipping cost: 30,000 VND\nTotal: 39,600,000 VND + 30,000 VND = 39,630,000 VND\n\nT\u1ed5ng c\u1ed9ng: 39,630,000 VND",
+      "status": "ok",
+      "session": "pub-01",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:00.107783Z"
+    },
+    {
+      "qid": "pub-02",
+      "question": "Mua 1 MacBook ship TP HCM het bao nhieu?",
+      "answer": "Gi\u00e1 MacBook: 35,000,000 VND\nPh\u00ed v\u1eadn chuy\u1ec3n: 28,000 VND\nT\u1ed5ng c\u1ed9ng: 35,000,000 VND + 28,000 VND = 35,028,000 VND",
+      "status": "ok",
+      "session": "pub-02",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:00.109828Z"
+    },
+    {
+      "qid": "pub-03",
+      "question": "Con iPad khong, gia bao nhieu?",
+      "answer": "C\u00f3, iPad c\u00f3 h\u00e0ng. Gi\u00e1 c\u1ee7a m\u1ed7i chi\u1ebfc iPad l\u00e0 18.000.000 VND.",
+      "status": "ok",
+      "session": "pub-03",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:00.458658Z"
+    },
+    {
+      "qid": "pub-04",
+      "question": "Mua 3 iPhone dung ma VIP20 ship Da Nang tong bao nhieu?",
+      "answer": "Calculating the total price:\n\n1.  **Item Price:** 3 (quantity) x 22,000,000 VND (unit price) = 66,000,000 VND\n2.  **Discount:** 66,000,000 VND x 20% (discount rate) = 13,200,000 VND\n3.  **Price after discount:** 66,000,000 VND - 13,200,000 VND = 52,800,000 VND\n4.  **Shipping Cost:** 37,500 VND\n5.  **Total Price:** 52,800,000 VND + 37,500 VND = 52,837,500 VND\n\nT\u1ed5ng c\u1ed9ng: 52,837,500 VND",
+      "status": "ok",
+      "session": "pub-04",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:00.529604Z"
+    },
+    {
+      "qid": "pub-05",
+      "question": "Mua 1 AirPods ship Ha Noi?",
+      "answer": "AirPods hi\u1ec7n \u0111\u00e3 h\u1ebft h\u00e0ng n\u00ean kh\u00f4ng th\u1ec3 \u0111\u1eb7t mua.",
+      "status": "ok",
+      "session": "pub-05",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:00.621508Z"
+    },
+    {
+      "qid": "pub-06",
+      "question": "Mua 2 iPhone dung ma EXPIRED ship Ha Noi tong bao nhieu?",
+      "answer": null,
+      "status": "wrapper_error",
+      "session": "pub-06",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:00.664558Z"
+    },
+    {
+      "qid": "pub-07",
+      "question": "Mua 1 Samsung ship Ha Noi?",
+      "answer": "Xin l\u1ed7i, s\u1ea3n ph\u1ea9m Samsung hi\u1ec7n kh\u00f4ng c\u00f3 trong kho.",
+      "status": "ok",
+      "session": "pub-07",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:00.831504Z"
+    },
+    {
+      "qid": "pub-08",
+      "question": "Mua 2 iPhone ship Da Lat?",
+      "answer": "Xin l\u1ed7i, hi\u1ec7n t\u1ea1i ch\u00fang t\u00f4i ch\u01b0a h\u1ed7 tr\u1ee3 v\u1eadn chuy\u1ec3n \u0111\u1ebfn \u0110\u00e0 L\u1ea1t.",
+      "status": "ok",
+      "session": "pub-08",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:00.866777Z"
+    },
+    {
+      "qid": "pub-09",
+      "question": "Mua 2 iPhone dung ma WINNER ship TP HCM tong bao nhieu?",
+      "answer": "Calculating the total price for 2 iPhones with the coupon code WINNER shipped to TP HCM:\n\n1. **Item Price:**\n   - Quantity: 2\n   - Unit Price: 22,000,000 VND\n   - Item Total: 2 * 22,000,000 VND = 44,000,000 VND\n\n2. **Discount:**\n   - Discount Percentage: 10%\n   - Discount Amount: 44,000,000 VND * 10% = 4,400,000 VND\n\n3. **Price After Discount:**\n   - 44,000,000 VND - 4,400,000 VND = 39,600,000 VND\n\n4. **Shipping Cost:**\n   - Weight per iPhone: 0.5 kg\n   - Total Weight: 2 * 0.5 kg = 1 kg\n   - Shipping Cost: 25,000 VND\n\n5. **Final Total:**\n   - 39,600,000 VND (Price After Discount) + 25,000 VND (Shipping Cost) = 39,625,000 VND\n\nT\u1ed5ng c\u1ed9ng: 39,625,000 VND",
+      "status": "ok",
+      "session": "pub-09",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:00.893316Z"
+    },
+    {
+      "qid": "pub-10",
+      "question": "Mua 1 MacBook dung ma SALE15 ship Hai Phong tong bao nhieu?",
+      "answer": "Calculating the total price:\nUnit Price: 35,000,000 VND\nQuantity: 1\nDiscount: 15%\nShipping Cost: 31,000 VND\n\n1. Price before discount: 1 x 35,000,000 VND = 35,000,000 VND\n2. Discount amount: 35,000,000 VND x 15% = 5,250,000 VND\n3. Price after discount: 35,000,000 VND - 5,250,000 VND = 29,750,000 VND\n4. Total price: 29,750,000 VND + 31,000 VND = 29,781,000 VND\n\nT\u1ed5ng c\u1ed9ng: 29,781,000 VND",
+      "status": "ok",
+      "session": "pub-10",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:01.006772Z"
+    },
+    {
+      "qid": "pub-11",
+      "question": "Mua 2 iPhone dung ma WINNER ship H\u00e0 N\u1ed9i tong cong bao nhieu VND?",
+      "answer": "S\u1ea3n ph\u1ea9m: 2 iPhone\n\u0110\u01a1n gi\u00e1: 22,000,000 VND/chi\u1ebfc\nS\u1ed1 l\u01b0\u1ee3ng: 2\nGi\u1ea3m gi\u00e1: 10% v\u1edbi m\u00e3 WINNER\n\nT\u00ednh to\u00e1n chi ph\u00ed s\u1ea3n ph\u1ea9m:\n2 chi\u1ebfc x 22,000,000 VND/chi\u1ebfc = 44,000,000 VND\nGi\u1ea3m gi\u00e1: 44,000,000 VND x 10% = 4,400,000 VND\nGi\u00e1 sau gi\u1ea3m gi\u00e1: 44,000,000 VND - 4,400,000 VND = 39,600,000 VND\n\nTr\u1ecdng l\u01b0\u1ee3ng: 2 chi\u1ebfc x 0.5 kg/chi\u1ebfc = 1 kg\nPh\u00ed v\u1eadn chuy\u1ec3n \u0111\u1ebfn H\u00e0 N\u1ed9i kh\u00f4ng t\u00ednh \u0111\u01b0\u1ee3c do d\u1ecbch v\u1ee5 v\u1eadn chuy\u1ec3n kh\u00f4ng h\u1ed7 tr\u1ee3 \u0111\u1ecba \u0111i\u1ec3m n\u00e0y.\n\nT\u1ed5ng c\u1ed9ng: 39,600,000 VND (ch\u01b0a bao g\u1ed3m ph\u00ed v\u1eadn chuy\u1ec3n)",
+      "status": "ok",
+      "session": "pub-11",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:01.171915Z"
+    },
+    {
+      "qid": "pub-12",
+      "question": "Mua 2 iPhone dung ma WINNER, ship Ha Noi - tong cong bao nhieu VND?",
+      "answer": "Calculating the total price:\nItem price: 2 x 22,000,000 VND = 44,000,000 VND\nDiscount: 44,000,000 VND x 10% = 4,400,000 VND\nPrice after discount: 44,000,000 VND - 4,400,000 VND = 39,600,000 VND\nShipping cost: 30,000 VND\nTotal: 39,600,000 VND + 30,000 VND = 39,630,000 VND\n\nT\u1ed5ng c\u1ed9ng: 39,630,000 VND",
+      "status": "ok",
+      "session": "pub-12",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:01.210231Z"
+    },
+    {
+      "qid": "pub-13",
+      "question": "Mua 1 iPhone ship Ha Noi, lien he toi qua email an.nguyen@gmail.com nhe",
+      "answer": "T\u00f4i kh\u00f4ng th\u1ec3 thu th\u1eadp th\u00f4ng tin c\u00e1 nh\u00e2n c\u1ee7a b\u1ea1n. Vui l\u00f2ng kh\u00f4ng cung c\u1ea5p email hay b\u1ea5t k\u1ef3 th\u00f4ng tin c\u00e1 nh\u00e2n n\u00e0o kh\u00e1c. (lien he: [REDACTED])",
+      "status": "ok",
+      "session": "pub-13",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:01.371369Z"
+    }
+  ],
+  "sealed": {
+    "alg": "HMAC-SHA256",
+    "note": "binary-measured metrics for scoring; build your own observability in wrapper.py",
+    "data": "W3siZXJyb3IiOiBudWxsLCAibGF0ZW5jeV9tcyI6IDgyMjUsICJtb2RlbCI6ICJnb29nbGUvZ2VtaW5pLTIuNS1mbGFzaCIsICJwaWkiOiBmYWxzZSwgInByb3ZpZGVyIjogIm9wZW5haSIsICJzdGVwcyI6IDMsICJ0b29sc191c2VkIjogWyJjaGVja19zdG9jayIsICJnZXRfZGlzY291bnQiLCAiY2FsY19zaGlwcGluZyJdLCAidXNhZ2UiOiB7ImNvbXBsZXRpb25fdG9rZW5zIjogMjAxLCAicHJvbXB0X3Rva2VucyI6IDE0NzM2LCAidG90YWxfdG9rZW5zIjogMTQ5Mzd9fSwgeyJlcnJvciI6IG51bGwsICJsYXRlbmN5X21zIjogNzkzMSwgIm1vZGVsIjogImdvb2dsZS9nZW1pbmktMi41LWZsYXNoIiwgInBpaSI6IGZhbHNlLCAicHJvdmlkZXIiOiAib3BlbmFpIiwgInN0ZXBzIjogMiwgInRvb2xzX3VzZWQiOiBbImNoZWNrX3N0b2NrIiwgImNhbGNfc2hpcHBpbmciXSwgInVzYWdlIjogeyJjb21wbGV0aW9uX3Rva2VucyI6IDg1LCAicHJvbXB0X3Rva2VucyI6IDEwNjcyLCAidG90YWxfdG9rZW5zIjogMTA3NTd9fSwgeyJlcnJvciI6IG51bGwsICJsYXRlbmN5X21zIjogMTExODMsICJtb2RlbCI6ICJnb29nbGUvZ2VtaW5pLTIuNS1mbGFzaCIsICJwaWkiOiBmYWxzZSwgInByb3ZpZGVyIjogIm9wZW5haSIsICJzdGVwcyI6IDEsICJ0b29sc191c2VkIjogWyJjaGVja19zdG9jayJdLCAidXNhZ2UiOiB7ImNvbXBsZXRpb25fdG9rZW5zIjogMzIsICJwcm9tcHRfdG9rZW5zIjogNjg0OCwgInRvdGFsX3Rva2VucyI6IDY4ODB9fSwgeyJlcnJvciI6IG51bGwsICJsYXRlbmN5X21zIjogODIzMSwgIm1vZGVsIjogImdvb2dsZS9nZW1pbmktMi41LWZsYXNoIiwgInBpaSI6IGZhbHNlLCAicHJvdmlkZXIiOiAib3BlbmFpIiwgInN0ZXBzIjogMywgInRvb2xzX3VzZWQiOiBbImNoZWNrX3N0b2NrIiwgImdldF9kaXNjb3VudCIsICJjYWxjX3NoaXBwaW5nIl0sICJ1c2FnZSI6IHsiY29tcGxldGlvbl90b2tlbnMiOiAyMzYsICJwcm9tcHRfdG9rZW5zIjogMTQ2NzIsICJ0b3RhbF90b2tlbnMiOiAxNDkwOH19LCB7ImVycm9yIjogbnVsbCwgImxhdGVuY3lfbXMiOiA0MTMzLCAibW9kZWwiOiAiZ29vZ2xlL2dlbWluaS0yLjUtZmxhc2giLCAicGlpIjogZmFsc2UsICJwcm92aWRlciI6ICJvcGVuYWkiLCAic3RlcHMiOiAxLCAidG9vbHNfdXNlZCI6IFsiY2hlY2tfc3RvY2siXSwgInVzYWdlIjogeyJjb21wbGV0aW9uX3Rva2VucyI6IDIwLCAicHJvbXB0X3Rva2VucyI6IDY4MzIsICJ0b3RhbF90b2tlbnMiOiA2ODUyfX0sIHsiZXJyb3IiOiAiJ05vbmVUeXBlJyBvYmplY3QgaXMgbm90IHN1YnNjcmlwdGFibGUiLCAibGF0ZW5jeV9tcyI6IDAsICJtb2RlbCI6IG51bGwsICJwaWkiOiBmYWxzZSwgInByb3ZpZGVyIjogIm9wZW5haSIsICJzdGVwcyI6IDAsICJ0b29sc191c2VkIjogW10sICJ1c2FnZSI6IHsiY29tcGxldGlvbl90b2tlbnMiOiAwLCAicHJvbXB0X3Rva2VucyI6IDAsICJ0b3RhbF90b2tlbnMiOiAwfX0sIHsiZXJyb3IiOiBudWxsLCAibGF0ZW5jeV9tcyI6IDYwOTMsICJtb2RlbCI6ICJnb29nbGUvZ2VtaW5pLTIuNS1mbGFzaCIsICJwaWkiOiBmYWxzZSwgInByb3ZpZGVyIjogIm9wZW5haSIsICJzdGVwcyI6IDEsICJ0b29sc191c2VkIjogWyJjaGVja19zdG9jayJdLCAidXNhZ2UiOiB7ImNvbXBsZXRpb25fdG9rZW5zIjogMTksICJwcm9tcHRfdG9rZW5zIjogNjczNiwgInRvdGFsX3Rva2VucyI6IDY3NTV9fSwgeyJlcnJvciI6IG51bGwsICJsYXRlbmN5X21zIjogNTc1NiwgIm1vZGVsIjogImdvb2dsZS9nZW1pbmktMi41LWZsYXNoIiwgInBpaSI6IGZhbHNlLCAicHJvdmlkZXIiOiAib3BlbmFpIiwgInN0ZXBzIjogMiwgInRvb2xzX3VzZWQiOiBbImNoZWNrX3N0b2NrIiwgImNhbGNfc2hpcHBpbmciXSwgInVzYWdlIjogeyJjb21wbGV0aW9uX3Rva2VucyI6IDMzLCAicHJvbXB0X3Rva2VucyI6IDEwNTUyLCAidG90YWxfdG9rZW5zIjogMTA1ODV9fSwgeyJlcnJvciI6IG51bGwsICJsYXRlbmN5X21zIjogODY1NSwgIm1vZGVsIjogImdvb2dsZS9nZW1pbmktMi41LWZsYXNoIiwgInBpaSI6IGZhbHNlLCAicHJvdmlkZXIiOiAib3BlbmFpIiwgInN0ZXBzIjogMywgInRvb2xzX3VzZWQiOiBbImNoZWNrX3N0b2NrIiwgImdldF9kaXNjb3VudCIsICJjYWxjX3NoaXBwaW5nIl0sICJ1c2FnZSI6IHsiY29tcGxldGlvbl90b2tlbnMiOiAzMjksICJwcm9tcHRfdG9rZW5zIjogMTQ2MTYsICJ0b3RhbF90b2tlbnMiOiAxNDk0NX19LCB7ImVycm9yIjogbnVsbCwgImxhdGVuY3lfbXMiOiA4OTA2LCAibW9kZWwiOiAiZ29vZ2xlL2dlbWluaS0yLjUtZmxhc2giLCAicGlpIjogZmFsc2UsICJwcm92aWRlciI6ICJvcGVuYWkiLCAic3RlcHMiOiAzLCAidG9vbHNfdXNlZCI6IFsiY2hlY2tfc3RvY2siLCAiZ2V0X2Rpc2NvdW50IiwgImNhbGNfc2hpcHBpbmciXSwgInVzYWdlIjogeyJjb21wbGV0aW9uX3Rva2VucyI6IDI0MiwgInByb21wdF90b2tlbnMiOiAxNDcyMCwgInRvdGFsX3Rva2VucyI6IDE0OTYyfX0sIHsiZXJyb3IiOiBudWxsLCAibGF0ZW5jeV9tcyI6IDcwNTIsICJtb2RlbCI6ICJnb29nbGUvZ2VtaW5pLTIuNS1mbGFzaCIsICJwaWkiOiBmYWxzZSwgInByb3ZpZGVyIjogIm9wZW5haSIsICJzdGVwcyI6IDMsICJ0b29sc191c2VkIjogWyJjaGVja19zdG9jayIsICJnZXRfZGlzY291bnQiLCAiY2FsY19zaGlwcGluZyJdLCAidXNhZ2UiOiB7ImNvbXBsZXRpb25fdG9rZW5zIjogMjU4LCAicHJvbXB0X3Rva2VucyI6IDE0NzA0LCAidG90YWxfdG9rZW5zIjogMTQ5NjJ9fSwgeyJlcnJvciI6IG51bGwsICJsYXRlbmN5X21zIjogNjU5MCwgIm1vZGVsIjogImdvb2dsZS9nZW1pbmktMi41LWZsYXNoIiwgInBpaSI6IGZhbHNlLCAicHJvdmlkZXIiOiAib3BlbmFpIiwgInN0ZXBzIjogMywgInRvb2xzX3VzZWQiOiBbImNoZWNrX3N0b2NrIiwgImdldF9kaXNjb3VudCIsICJjYWxjX3NoaXBwaW5nIl0sICJ1c2FnZSI6IHsiY29tcGxldGlvbl90b2tlbnMiOiAyMDEsICJwcm9tcHRfdG9rZW5zIjogMTQ3MzYsICJ0b3RhbF90b2tlbnMiOiAxNDkzN319LCB7ImVycm9yIjogbnVsbCwgImxhdGVuY3lfbXMiOiAxNjMxLCAibW9kZWwiOiAiZ29vZ2xlL2dlbWluaS0yLjUtZmxhc2giLCAicGlpIjogZmFsc2UsICJwcm92aWRlciI6ICJvcGVuYWkiLCAic3RlcHMiOiAwLCAidG9vbHNfdXNlZCI6IFtdLCAidXNhZ2UiOiB7ImNvbXBsZXRpb25fdG9rZW5zIjogMjksICJwcm9tcHRfdG9rZW5zIjogMzQwOCwgInRvdGFsX3Rva2VucyI6IDM0Mzd9fV0=",
+    "sig": "a163241a21a2406bb1bf26f8e3a11f4ea23fe703ccf3cf5ef6d241bedfa8fe93"
+  }
+}

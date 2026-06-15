@@ -1,0 +1,161 @@
+{
+  "phase": "practice",
+  "n": 13,
+  "users": null,
+  "turns": null,
+  "config_used": {
+    "provider": "openai",
+    "model": "google/gemini-2.5-flash",
+    "model_price_tier": "premium",
+    "max_steps": 12,
+    "loop_guard": true,
+    "temperature": 0.1,
+    "context_size": 8,
+    "verbose_system": true,
+    "retry": {
+      "enabled": true,
+      "max_attempts": 3,
+      "backoff_ms": 1000
+    },
+    "cache": {
+      "enabled": true
+    },
+    "normalize_unicode": false,
+    "redact_pii": true,
+    "session_drift_rate": 0.0,
+    "context_reset_every": 0,
+    "tool_error_rate": 0.0,
+    "catalog_override": {},
+    "planner": false,
+    "verify": false,
+    "self_consistency": 1,
+    "tool_budget": 0,
+    "prompt_chars": 1064,
+    "custom_prompt": true
+  },
+  "results": [
+    {
+      "qid": "pub-01",
+      "question": "Mua 2 iPhone dung ma WINNER, ship Ha Noi - tong cong bao nhieu VND?",
+      "answer": "System unavailable.",
+      "status": "error",
+      "session": "pub-01",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:00.107783Z"
+    },
+    {
+      "qid": "pub-02",
+      "question": "Mua 1 MacBook ship TP HCM het bao nhieu?",
+      "answer": "System unavailable.",
+      "status": "error",
+      "session": "pub-02",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:00.109828Z"
+    },
+    {
+      "qid": "pub-03",
+      "question": "Con iPad khong, gia bao nhieu?",
+      "answer": "System unavailable.",
+      "status": "error",
+      "session": "pub-03",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:00.458658Z"
+    },
+    {
+      "qid": "pub-04",
+      "question": "Mua 3 iPhone dung ma VIP20 ship Da Nang tong bao nhieu?",
+      "answer": "System unavailable.",
+      "status": "error",
+      "session": "pub-04",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:00.529604Z"
+    },
+    {
+      "qid": "pub-05",
+      "question": "Mua 1 AirPods ship Ha Noi?",
+      "answer": "System unavailable.",
+      "status": "error",
+      "session": "pub-05",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:00.621508Z"
+    },
+    {
+      "qid": "pub-06",
+      "question": "Mua 2 iPhone dung ma EXPIRED ship Ha Noi tong bao nhieu?",
+      "answer": "System unavailable.",
+      "status": "error",
+      "session": "pub-06",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:00.664558Z"
+    },
+    {
+      "qid": "pub-07",
+      "question": "Mua 1 Samsung ship Ha Noi?",
+      "answer": "System unavailable.",
+      "status": "error",
+      "session": "pub-07",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:00.831504Z"
+    },
+    {
+      "qid": "pub-08",
+      "question": "Mua 2 iPhone ship Da Lat?",
+      "answer": "System unavailable.",
+      "status": "error",
+      "session": "pub-08",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:00.866777Z"
+    },
+    {
+      "qid": "pub-09",
+      "question": "Mua 2 iPhone dung ma WINNER ship TP HCM tong bao nhieu?",
+      "answer": "System unavailable.",
+      "status": "error",
+      "session": "pub-09",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:00.893316Z"
+    },
+    {
+      "qid": "pub-10",
+      "question": "Mua 1 MacBook dung ma SALE15 ship Hai Phong tong bao nhieu?",
+      "answer": "System unavailable.",
+      "status": "error",
+      "session": "pub-10",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:01.006772Z"
+    },
+    {
+      "qid": "pub-11",
+      "question": "Mua 2 iPhone dung ma WINNER ship Hà Nội tong cong bao nhieu VND?",
+      "answer": "System unavailable.",
+      "status": "error",
+      "session": "pub-11",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:01.171915Z"
+    },
+    {
+      "qid": "pub-12",
+      "question": "Mua 2 iPhone dung ma WINNER, ship Ha Noi - tong cong bao nhieu VND?",
+      "answer": "System unavailable.",
+      "status": "error",
+      "session": "pub-12",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:01.210231Z"
+    },
+    {
+      "qid": "pub-13",
+      "question": "Mua 1 iPhone ship Ha Noi, lien he toi qua email an.nguyen@gmail.com nhe",
+      "answer": "System unavailable.",
+      "status": "error",
+      "session": "pub-13",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:01.371369Z"
+    }
+  ],
+  "sealed": {
+    "alg": "HMAC-SHA256",
+    "note": "binary-measured metrics for scoring; build your own observability in wrapper.py",
+    "data": "W3siZXJyb3IiOiBudWxsLCAibGF0ZW5jeV9tcyI6IDAsICJtb2RlbCI6IG51bGwsICJwaWkiOiBmYWxzZSwgInByb3ZpZGVyIjogIm9wZW5haSIsICJzdGVwcyI6IDAsICJ0b29sc191c2VkIjogW10sICJ1c2FnZSI6IHt9fSwgeyJlcnJvciI6IG51bGwsICJsYXRlbmN5X21zIjogMCwgIm1vZGVsIjogbnVsbCwgInBpaSI6IGZhbHNlLCAicHJvdmlkZXIiOiAib3BlbmFpIiwgInN0ZXBzIjogMCwgInRvb2xzX3VzZWQiOiBbXSwgInVzYWdlIjoge319LCB7ImVycm9yIjogbnVsbCwgImxhdGVuY3lfbXMiOiAwLCAibW9kZWwiOiBudWxsLCAicGlpIjogZmFsc2UsICJwcm92aWRlciI6ICJvcGVuYWkiLCAic3RlcHMiOiAwLCAidG9vbHNfdXNlZCI6IFtdLCAidXNhZ2UiOiB7fX0sIHsiZXJyb3IiOiBudWxsLCAibGF0ZW5jeV9tcyI6IDAsICJtb2RlbCI6IG51bGwsICJwaWkiOiBmYWxzZSwgInByb3ZpZGVyIjogIm9wZW5haSIsICJzdGVwcyI6IDAsICJ0b29sc191c2VkIjogW10sICJ1c2FnZSI6IHt9fSwgeyJlcnJvciI6IG51bGwsICJsYXRlbmN5X21zIjogMCwgIm1vZGVsIjogbnVsbCwgInBpaSI6IGZhbHNlLCAicHJvdmlkZXIiOiAib3BlbmFpIiwgInN0ZXBzIjogMCwgInRvb2xzX3VzZWQiOiBbXSwgInVzYWdlIjoge319LCB7ImVycm9yIjogbnVsbCwgImxhdGVuY3lfbXMiOiAwLCAibW9kZWwiOiBudWxsLCAicGlpIjogZmFsc2UsICJwcm92aWRlciI6ICJvcGVuYWkiLCAic3RlcHMiOiAwLCAidG9vbHNfdXNlZCI6IFtdLCAidXNhZ2UiOiB7fX0sIHsiZXJyb3IiOiBudWxsLCAibGF0ZW5jeV9tcyI6IDAsICJtb2RlbCI6IG51bGwsICJwaWkiOiBmYWxzZSwgInByb3ZpZGVyIjogIm9wZW5haSIsICJzdGVwcyI6IDAsICJ0b29sc191c2VkIjogW10sICJ1c2FnZSI6IHt9fSwgeyJlcnJvciI6IG51bGwsICJsYXRlbmN5X21zIjogMCwgIm1vZGVsIjogbnVsbCwgInBpaSI6IGZhbHNlLCAicHJvdmlkZXIiOiAib3BlbmFpIiwgInN0ZXBzIjogMCwgInRvb2xzX3VzZWQiOiBbXSwgInVzYWdlIjoge319LCB7ImVycm9yIjogbnVsbCwgImxhdGVuY3lfbXMiOiAwLCAibW9kZWwiOiBudWxsLCAicGlpIjogZmFsc2UsICJwcm92aWRlciI6ICJvcGVuYWkiLCAic3RlcHMiOiAwLCAidG9vbHNfdXNlZCI6IFtdLCAidXNhZ2UiOiB7fX0sIHsiZXJyb3IiOiBudWxsLCAibGF0ZW5jeV9tcyI6IDAsICJtb2RlbCI6IG51bGwsICJwaWkiOiBmYWxzZSwgInByb3ZpZGVyIjogIm9wZW5haSIsICJzdGVwcyI6IDAsICJ0b29sc191c2VkIjogW10sICJ1c2FnZSI6IHt9fSwgeyJlcnJvciI6IG51bGwsICJsYXRlbmN5X21zIjogMCwgIm1vZGVsIjogbnVsbCwgInBpaSI6IGZhbHNlLCAicHJvdmlkZXIiOiAib3BlbmFpIiwgInN0ZXBzIjogMCwgInRvb2xzX3VzZWQiOiBbXSwgInVzYWdlIjoge319LCB7ImVycm9yIjogbnVsbCwgImxhdGVuY3lfbXMiOiAwLCAibW9kZWwiOiBudWxsLCAicGlpIjogZmFsc2UsICJwcm92aWRlciI6ICJvcGVuYWkiLCAic3RlcHMiOiAwLCAidG9vbHNfdXNlZCI6IFtdLCAidXNhZ2UiOiB7fX0sIHsiZXJyb3IiOiBudWxsLCAibGF0ZW5jeV9tcyI6IDAsICJtb2RlbCI6IG51bGwsICJwaWkiOiBmYWxzZSwgInByb3ZpZGVyIjogIm9wZW5haSIsICJzdGVwcyI6IDAsICJ0b29sc191c2VkIjogW10sICJ1c2FnZSI6IHt9fV0=",
+    "sig": "9ec3b7e6e227d5d0d8dc4032d54270744ce9e39e599547a05c20337ab5331ea9"
+  }
+}
