@@ -16,18 +16,49 @@ the config you pass to call_next, e.g.:
 (Or just edit solution/prompt.txt for a single static prompt used on every request.)
 """
 from __future__ import annotations
-
-# You may reuse the Day 13 toolkit, e.g.:
-# from telemetry.logger import logger
-# from telemetry.cost import cost_from_usage
-# from telemetry.redact import redact
-
+import time
+from telemetry.logger import logger
+from telemetry.cost import cost_from_usage
+from telemetry.redact import redact_value
 
 def mitigate(call_next, question, config, context):
-    # TODO: add observability here (log latency, tokens, cost, errors, PII, tool counts).
-    # TODO: add mitigations (retry on error, cache repeats, route cheap, reset drifting
-    #       sessions, validate arithmetic, sanitize order notes, redact PII...).
-    # TODO: optionally route a better system prompt:
-    #       conf = dict(config); conf["system_prompt"] = "..."; return call_next(question, conf)
-    result = call_next(question, config)        # <-- passthrough stub: replace me
+    start = time.perf_counter()
+    
+    max_retries = config.get("retry", {}).get("max_attempts", 3)
+    result = None
+    
+    for attempt in range(max_retries):
+        try:
+            result = call_next(question, config)
+            if result.get("status") != "error":
+                break
+        except Exception as e:
+            logger.log_event("agent_exception", {"attempt": attempt, "error": str(e)})
+            if attempt == max_retries - 1:
+                result = {"status": "error", "answer": "System unavailable.", "meta": {}, "trace": []}
+                
+    if not result:
+        result = {"status": "error", "answer": "Unknown error", "meta": {}, "trace": []}
+
+    latency_ms = int((time.perf_counter() - start) * 1000)
+    meta = result.get("meta", {})
+    usage = meta.get("usage", {})
+    cost = cost_from_usage(config.get("model", ""), usage)
+    
+    if "answer" in result and isinstance(result["answer"], str):
+        result["answer"] = redact_value(result["answer"])
+
+    log_data = {
+        "session_id": context.get("session_id"),
+        "qid": context.get("qid"),
+        "latency_ms": latency_ms,
+        "cost_usd": cost,
+        "prompt_tokens": usage.get("prompt_tokens", 0),
+        "completion_tokens": usage.get("completion_tokens", 0),
+        "status": result.get("status"),
+        "answer_preview": result.get("answer", "")[:100],
+        "tool_calls": len(result.get("trace", [])),
+    }
+    logger.log_event("agent_request_completed", log_data)
+
     return result
